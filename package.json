@@ -1,0 +1,46 @@
+{
+  "name": "ui-machines",
+  "description": "XState machines for common UI patterns",
+  "version": "0.0.15",
+  "license": "MIT",
+  "author": "Carlos Camilo Lobo Ulloque",
+  "main": "dist/index.js",
+  "module": "dist/ui-machines.esm.js",
+  "repository": {
+    "url": "https://github.com/Platekun/ui-machines"
+  },
+  "typings": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "start": "tsdx watch",
+    "build": "tsdx build",
+    "test": "tsdx test",
+    "lint": "tsdx lint"
+  },
+  "peerDependencies": {},
+  "husky": {
+    "hooks": {
+      "pre-commit": "tsdx lint"
+    }
+  },
+  "prettier": {
+    "printWidth": 80,
+    "semi": true,
+    "singleQuote": true,
+    "trailingComma": "es5"
+  },
+  "devDependencies": {
+    "@types/jest": "^24.0.22",
+    "husky": "^3.0.9",
+    "tsdx": "^0.11.0",
+    "tslib": "^1.10.0",
+    "typescript": "^3.7.2"
+  },
+  "dependencies": {
+    "class-validator": "^0.11.0",
+    "titlecase": "^1.1.3",
+    "xstate": "^4.6.7"
+  }
+}
